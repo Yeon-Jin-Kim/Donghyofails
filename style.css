@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/*navigation bar*/
+
+.navcontainer {
+    height: 90px;
+    padding: 0 7%;
+    background-color: rgb(215, 104, 104);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 40px;
+    color: aquamarine;
+}
+
+/*section*/
+
+.sec {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-title {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    border: 1px solid #c53737;
+    /* border-radius: 10px; */
+    outline: none;
+    width: 700px;
+    height: 75px;
+}
+
+input[type="password"] {
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    border: 1px solid #c53737;
+    /* border-radius: 10px; */
+    outline: none;
+    width: 700px;
+    height: 75px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #c53737;
+    color: #fff;
+    border: 1px solid #c53737;
+    border-radius: 10px;
+    width: 300px;
+    height: 75px;
+    cursor: pointer;
+    margin-left: -4px;
+}
+
+/*result*/
+
+
+/* .thanks {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+#result {
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 10;
+    margin: 50px 0 0 0;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.donghyo {
+    color: #c53737;
+    font-weight: 900;
+}

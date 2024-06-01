@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>몽상가들 주관 신진작가 공모전</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+
+    <meta property="og:title" content="LearnUs">
+    <meta property="og:description" content="by Yeonjin Kim">
+    <meta property="og:image" content="https://www.learnus.org/theme/coursemosv2/pix/layout/logo-footer.png">
+</head>
+
+<body>
+    <nav>
+        <div class="navcontainer">
+            <div class="nav-logo">
+                <a href="./index.html"><img src="https://static.wixstatic.com/media/8c5660_ad6a6a62f0cf4080a0a23b168688a032~mv2.jpg/v1/fill/w_120,h_120,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/%EB%AA%BD%EC%83%81%EA%B0%80%EB%93%A42.jpg"
+                        alt="이미지"></a>
+            </div>
+            <h1>주관 신진작가 공모전</h1>
+        </div>
+    </nav>
+
+    <section class="sec">
+        <div class="sec-title">
+            <h2>몽상사들 주관 7회 신진작가 공모전 결과</h2>
+        </div>
+        <form action="#">
+            <div class="search-container">
+                <input type="text" id="search" placeholder="ID">
+            </div>
+        </form>
+        <form action="#">
+            <div class="search-container">
+                <input type="password" id="search" placeholder="비밀번호">
+            </div>
+        </form>
+        <button type="submit" id="fail">결과 확인</button>
+    </section>
+
+    <div class='thanks' id="result">
+        <div class="gamsa1"></div>
+        <div class="gamsa2"></div>
+        <div class="gamsa3"></div>
+    </div>
+
+    <script>
+        document.getElementById('fail').addEventListener('click', function () {
+
+            // document.getElementsByClassName('sec')[0].style.display = 'none';
+            // document.getElementById('result').textContent = '이동현 님은 합격자 명단에 없습니다. 감사합니다.';
+
+            setTimeout(function() {
+            //     // 딜레이 후 실행될 코드를 여기에 작성합니다.
+                document.querySelectorAll('.sec')[0].style.display = 'none'; // 'sec' 섹션을 숨깁니다.
+                document.querySelector('.gamsa1').innerHTML = '<span class="donghyo">동효</span> 님은<br>';
+                document.querySelector('.gamsa2').innerHTML = '합격자 명단에 없습니다.<br>';
+                document.querySelector('.gamsa3').innerHTML = '감사합니다.'; // 'greeting'에 텍스트를 설정합니다.
+            //     // document.getElementById('result').style.display = 'block'; // 'result' 섹션을 보여줍니다. 이 코드가 없다면 'result' 섹션을 따로 보이게 설정해야 합니다.
+                // document.querySelectorAll('.sec').forEach(function(el) {
+                //     el.style.display = 'none';
+                // });
+                
+                // // 'gamsa1' 클래스를 가진 모든 엘리먼트에 텍스트를 설정합니다.
+                // document.querySelectorAll('.gamsa1').forEach(function(el) {
+                //     el.textContent = '동효 님은';
+                // });
+                
+                // // 'gamsa2' 클래스를 가진 모든 엘리먼트에 텍스트를 설정합니다.
+                // document.querySelectorAll('.gamsa2').forEach(function(el) {
+                //     el.textContent = '합격자 명단에 없습니다.';
+                // });
+                
+                // // 'gamsa3' 클래스를 가진 모든 엘리먼트에 텍스트를 설정합니다.
+                // document.querySelectorAll('.gamsa3').forEach(function(el) {
+                //     el.textContent = '감사합니다.';
+                // });
+            }, 3000); // 1000 밀리초(1초) 후에 함수가 실행됩니다.
+        });
+
+    </script>
+
+    <!-- <script src="result.js"></script> -->
+</body>
+
+</html>
