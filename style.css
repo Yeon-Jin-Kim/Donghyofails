@@ -10,7 +10,7 @@ body {
 /*navigation bar*/
 
 .navcontainer {
-    height: 90px;
+    height: 120px;
     padding: 0;
     background-color: rgb(215, 104, 104);
     display: flex;
@@ -30,7 +30,7 @@ body {
     width: 1200px;
     margin: 0 auto;
     text-align: center;
-    padding: 250px 0;
+    padding: 700px 0;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -100,7 +100,7 @@ button[type="submit"] {
     font-size: 80px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 10;
-    margin: 250px 0 0 0;
+    margin: 700px 0 0 0;
     margin-bottom: 10px;
     text-align: center;
     padding: 40px 0;
